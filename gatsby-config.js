@@ -19,6 +19,7 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
+    'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-transformer-remark',
@@ -33,6 +34,13 @@ module.exports = {
             }
           }
         ]
+      }
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: 'b5qr8nzthdfs',
+        accessToken: 'gmDypjoNskLeE115GASqAI0gOaKmWLXGAmVbpvsZT7I'
       }
     }
   ],
